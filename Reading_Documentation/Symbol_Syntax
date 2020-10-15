@@ -1,0 +1,5 @@
+Q: How would you write a Symbol that represents your name.
+We aren't looking for a String; we want a Symbol, which is one 
+of ruby's datatypes.
+
+A: :name
