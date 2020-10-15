@@ -1,0 +1,14 @@
+Q: What will the following code print, and why?
+
+a = "Xyzzy"
+
+def my_value(b)
+  b = 'yzzyX'
+end
+
+my_value(a)
+puts a
+
+A: Output is 'Xyzzy'. <-- corrected.
+Because 'b' is being assigned 'yzzyX' in the method, and 'a' is
+not being changed at all.

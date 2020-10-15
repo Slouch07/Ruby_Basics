@@ -1,0 +1,16 @@
+Q: What will the following code print, and why?
+
+a = 7
+
+def my_value(b)
+  b = a + a
+end
+
+my_value(a)
+puts a
+
+My A: Output is 7 - because integers a immutable and the method does
+not know what the value of 'a' is.
+
+LS A: An error is thrown because my_value does not know the
+      value of 'a' is.

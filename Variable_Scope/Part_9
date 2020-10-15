@@ -1,0 +1,18 @@
+Q: What will the following code print, and why? 
+
+a = 7
+array = [1, 2, 3]
+
+array.each do |a|
+  a += 1
+end
+
+puts a
+
+My A: Output is 4 - because each time the array is iterated 
+      over it adds 1 to the element, so at the puts statement 'a'
+      is at 4.
+
+LS A: Output is 7 - because of a concept called 'shadowing'. Since
+      the method looks within itself first and find an 'a' variable
+      it stops looking. The outer variable 'a' is untouched.

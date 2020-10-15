@@ -1,0 +1,14 @@
+Q: What will the following code print, and why?
+
+a = "Xyzzy"
+
+def my_value(b)
+  b[2] = '-'
+end
+
+my_value(a)
+puts a
+
+Q: Output will be "Xy-zy". <-- corrected.
+This method can changed the string because unlike integers,
+strings are mutable (able to change).

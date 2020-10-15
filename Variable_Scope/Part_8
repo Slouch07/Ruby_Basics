@@ -1,0 +1,17 @@
+Q: What will the following code print, and why?
+
+array = [1, 2, 3]
+
+array.each do |element|
+  a = element
+end
+
+puts a
+
+My A: Output is 3 - because the each method will iterate over 
+      each element placing it in 'a' but as the puts is outside
+      the each method, it will print the last stored element.
+
+LS A: Output is error - because there was no 'a' variable initialized
+      and when you try to puts 'a' it will throw the error. 'a' 
+      inside the method block is only seen internally.

@@ -1,0 +1,15 @@
+Q: What will the following code print, and why?
+
+a = 7
+
+def my_value(b)
+  a = b
+end
+
+my_value(a + 5)
+puts a
+
+A: Output is 7.
+This is a similar scenario, a + 5 is passed to my_value.
+my_value sees a + 5, not the value of the variable a which is
+outside it's scope.

@@ -1,0 +1,15 @@
+Q: What will the following code print and why?
+
+a = 7
+
+def my_value(a)
+  a += 10
+end
+
+my_value(a)
+puts a
+
+A: Output is 7.
+This is the same scenario as part 1. Just because the b has
+changed to an a doesn't mean it will change the value store in
+a. The method cannot see the variables outside itself.
