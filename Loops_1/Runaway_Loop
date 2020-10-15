@@ -1,0 +1,23 @@
+The code below is an example of an infinite loop:
+
+loop do
+  puts 'Just keep printing...'
+end
+
+Q: Modify the code so the loop stops after the first iteration.
+
+My A:
+
+x = 0
+loop do
+  if x < 1
+    puts 'Just keep printing...'
+  end
+  x += 1
+end
+
+LS A: 
+loop do
+  puts 'Just keep printing...'
+  break
+end

@@ -1,0 +1,29 @@
+Q: Modify the following loop so it iterates 5 times instead 
+of just once.
+
+iterations = 1
+
+loop do
+  puts "Number of iterations = #{iterations}"
+  break
+end
+
+My A:
+
+iterations = 1
+
+loop do
+  if iterations <= 5
+  puts "Number of iterations = #{iterations}"
+  iterations += 1
+end
+
+LS A:
+
+iterations = 1
+
+loop do
+  puts "Number of iterations = #{iterations}"
+  iterations += 1
+  break if iterations > 5
+end
