@@ -16,19 +16,19 @@ loop do
   print "Please enter the numerator: "
   numerator = gets.chomp
   if valid_number?(numerator)
-      loop do
-        print "Please enter the denominator: "
-        denominator = gets.chomp
-          if valid_number?(denominator) && denominator != '0'
-            result = numerator.to_i / denominator.to_i
-            puts "#{numerator} / #{denominator} is #{result}."
-          elsif denominator == '0'
-            puts "Denominator cannot be 0. Please choose an integer greater than 0."
-          else
-            puts "Invalid input. Please choose a valid denominator."
-          end
-        break unless !valid_number?(denominator) || denominator == '0'
-      end
+    loop do
+      print "Please enter the denominator: "
+      denominator = gets.chomp
+        if valid_number?(denominator) && denominator != '0'
+          result = numerator.to_i / denominator.to_i
+          puts "#{numerator} / #{denominator} is #{result}."
+        elsif denominator == '0'
+          puts "Denominator cannot be 0. Please choose an integer greater than 0."
+        else
+          puts "Invalid input. Please choose a valid denominator."
+        end
+      break unless !valid_number?(denominator) || denominator == '0'
+    end
   else
     puts "Invalid input. Please choose a valid numerator."
   end
